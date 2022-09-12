@@ -816,7 +816,7 @@
   .label-check{
     display: flex;
     align-items: center;
-     margin-top: 20px;
+    margin-top: 20px;
     margin-bottom: 30px;
     padding-left: 12px;
     font-size: 14px;
@@ -852,13 +852,16 @@
    }
 
    .form-modal-check:focus + .icon-checkbox{
-      /* box-shadow: 0 0 0 2px var(--accent-color); */
-      box-shadow: 0 0 0 2px tomato;
+      box-shadow: 0 0 0 2px var(--accent-color);
    }
 
    .form-modal-check:checked + .icon-checkbox{
     background-color: var(--accent-color);
     border: none;
+   }
+
+   .form-modal-check:not(focus) + .icon-checkbox{
+      box-shadow: none;
    }
 
   .form-modal-button{
